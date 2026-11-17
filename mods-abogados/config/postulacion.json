@@ -1,0 +1,30 @@
+{
+  "_nota": "Mod 8 · Procurador según el procedimiento y la cuantía. REGLA ORIENTATIVA: DEBE VALIDARLA UN ABOGADO antes de usarla. Comprobada el 09/11/2026 con el texto vigente de los arts. 23 y 31 LEC (redacción de la LO 1/2025) en Jurisprudenciator. La exención de procurador y abogado solo alcanza a los juicios verbales por razón de la CUANTÍA que no excedan de 2.000 € y a la petición inicial del monitorio (arts. 23.2.1.º y 31.2.1.º), además de otros supuestos tasados. Un verbal por razón de la MATERIA (desahucio, art. 250.1.1.º) necesita procurador sea cual sea la cuantía. exento: nunca necesita procurador; exentoHasta: no lo necesita si la cuantía no excede de esa cifra; sin ninguno de los dos: siempre lo necesita.",
+  "aviso": "Postulación obligatoria (arts. 23 y 31 LEC)",
+  "umbralSinProcedimiento": 2000,
+  "procedimientos": {
+    "ordinario": {
+      "nombre": "Juicio ordinario",
+      "fundamento": "Arts. 23.1 y 31.1 LEC: procurador y abogado"
+    },
+    "verbal-cuantia": {
+      "nombre": "Juicio verbal por razón de la cuantía",
+      "exentoHasta": 2000,
+      "fundamento": "Arts. 23.2.1.º y 31.2.1.º LEC: sin procurador ni abogado si la cuantía no excede de 2.000 €"
+    },
+    "verbal-materia": {
+      "nombre": "Juicio verbal por razón de la materia (art. 250.1 LEC: desahucio, precario…)",
+      "fundamento": "La exención de los arts. 23.2.1.º y 31.2.1.º LEC solo alcanza a los verbales por razón de la cuantía"
+    },
+    "monitorio-peticion-inicial": {
+      "nombre": "Petición inicial del monitorio",
+      "exento": true,
+      "fundamento": "Arts. 23.2.1.º y 31.2.1.º LEC: la petición inicial del monitorio, sin procurador ni abogado"
+    },
+    "medidas-urgentes-previas": {
+      "nombre": "Medidas urgentes antes del juicio",
+      "exento": true,
+      "fundamento": "Arts. 23.2.3.º y 31.2.2.º LEC"
+    }
+  }
+}

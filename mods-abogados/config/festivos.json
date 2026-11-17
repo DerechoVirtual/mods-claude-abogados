@@ -1,0 +1,27 @@
+{
+  "_nota": "Festivos que el Mod 1 descuenta (art. 182.1 LOPJ y 130.2 LEC: fiestas nacionales y festivos laborales de tu comunidad autónoma y de tu localidad). Aquí solo van las fiestas nacionales del art. 45.1 RD 2001/1983 para 2026 y 2027. AÑADE las de tu comunidad autónoma y tu municipio (y el lunes que tu comunidad haya trasladado cuando una fiesta cae en domingo), consultando la Resolución anual de la Dirección General de Trabajo en el BOE (2026: BOE-A-2025-21667; 2027: BOE-A-2026-21254) y el boletín de tu comunidad o provincia. Formato de fecha: AAAA-MM-DD. Tras editar, pulsa «Recargar» en el panel.",
+  "festivos": [
+    { "fecha": "2026-01-01", "nombre": "Año Nuevo", "ambito": "nacional" },
+    { "fecha": "2026-01-06", "nombre": "Epifanía del Señor", "ambito": "nacional (sustituible por la CCAA)" },
+    { "fecha": "2026-04-02", "nombre": "Jueves Santo", "ambito": "nacional sustituible: comprueba tu CCAA" },
+    { "fecha": "2026-04-03", "nombre": "Viernes Santo", "ambito": "nacional" },
+    { "fecha": "2026-05-01", "nombre": "Fiesta del Trabajo", "ambito": "nacional" },
+    { "fecha": "2026-08-15", "nombre": "Asunción de la Virgen", "ambito": "nacional" },
+    { "fecha": "2026-10-12", "nombre": "Fiesta Nacional de España", "ambito": "nacional" },
+    { "fecha": "2026-11-01", "nombre": "Todos los Santos", "ambito": "nacional (cae en domingo: comprueba si tu CCAA lo traslada al lunes 2)" },
+    { "fecha": "2026-12-06", "nombre": "Día de la Constitución Española", "ambito": "nacional (cae en domingo: comprueba si tu CCAA lo traslada al lunes 7)" },
+    { "fecha": "2026-12-08", "nombre": "Inmaculada Concepción", "ambito": "nacional" },
+    { "fecha": "2026-12-25", "nombre": "Natividad del Señor", "ambito": "nacional" },
+    { "fecha": "2027-01-01", "nombre": "Año Nuevo", "ambito": "nacional" },
+    { "fecha": "2027-01-06", "nombre": "Epifanía del Señor", "ambito": "nacional (sustituible por la CCAA)" },
+    { "fecha": "2027-03-25", "nombre": "Jueves Santo", "ambito": "nacional sustituible: comprueba tu CCAA" },
+    { "fecha": "2027-03-26", "nombre": "Viernes Santo", "ambito": "nacional" },
+    { "fecha": "2027-05-01", "nombre": "Fiesta del Trabajo", "ambito": "nacional" },
+    { "fecha": "2027-08-15", "nombre": "Asunción de la Virgen", "ambito": "nacional" },
+    { "fecha": "2027-10-12", "nombre": "Fiesta Nacional de España", "ambito": "nacional" },
+    { "fecha": "2027-11-01", "nombre": "Todos los Santos", "ambito": "nacional" },
+    { "fecha": "2027-12-06", "nombre": "Día de la Constitución Española", "ambito": "nacional" },
+    { "fecha": "2027-12-08", "nombre": "Inmaculada Concepción", "ambito": "nacional" },
+    { "fecha": "2027-12-25", "nombre": "Natividad del Señor", "ambito": "nacional" }
+  ]
+}

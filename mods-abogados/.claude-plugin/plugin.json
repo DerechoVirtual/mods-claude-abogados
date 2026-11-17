@@ -1,0 +1,81 @@
+{
+  "name": "mods-abogados",
+  "version": "1.6.0",
+  "description": "Diez mods para abogados: plazos procesales, revisor de citas, cuenta atrás, un color por cliente, cupo de Jurisprudenciator, «que lo ataque el contrario», semáforo MASC, procurador, copia anonimizada con Anonimizator y siguientes pasos. Solo en sesiones de trabajo jurídico; banda de una o dos líneas.",
+  "author": {
+    "name": "Derecho Virtual"
+  },
+  "license": "MIT",
+  "keywords": [
+    "abogados",
+    "plazos",
+    "citas",
+    "mods",
+    "jurisprudenciator",
+    "anonimizator",
+    "rgpd"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "mod_plazos": {
+      "type": "boolean",
+      "title": "Mod 1 · Panel de plazos procesales",
+      "description": "Activa /plazos (los plazos de un escrito judicial, de un vistazo), /plazo-nuevo, /plazo-borrar y el panel con pestañas Del escrito, Mis plazos, Calculadora y Festivos.",
+      "default": true
+    },
+    "mod_citas": {
+      "type": "boolean",
+      "title": "Mod 2 · Revisor de citas legales",
+      "description": "Activa el semáforo de citas tras cada respuesta, el comando /citas y el botón «Pedir verificación».",
+      "default": true
+    },
+    "mod_cuenta_atras": {
+      "type": "boolean",
+      "title": "Mod 3 · Cuenta atrás de plazo",
+      "description": "Activa la pastilla del plazo más urgente en la banda encima del prompt.",
+      "default": true
+    },
+    "mod_color_cliente": {
+      "type": "boolean",
+      "title": "Mod 4 · Un color por cliente",
+      "description": "Activa /cliente, /cliente-nuevo, /cliente-ninguno, la banda y el acento de color del expediente activo.",
+      "default": true
+    },
+    "mod_cupo": {
+      "type": "boolean",
+      "title": "Mod 5 · Contador del cupo de Jurisprudenciator",
+      "description": "Cuenta las lecturas de Jurisprudenciator (también las de los subagentes) y avisa antes de agotar el cupo del día o de la semana. Comando /cupo.",
+      "default": true
+    },
+    "mod_contrario": {
+      "type": "boolean",
+      "title": "Mod 6 · Que lo ataque el contrario",
+      "description": "Al terminar un escrito aparece un botón para que un subagente lo ataque como la parte contraria. Comando /contrario.",
+      "default": true
+    },
+    "mod_masc": {
+      "type": "boolean",
+      "title": "Mod 7 · Semáforo MASC",
+      "description": "Al escribir una demanda civil del expediente activo, avisa si la ficha no acredita el intento de negociación previa (LO 1/2025). Comandos /ficha y /masc.",
+      "default": true
+    },
+    "mod_procurador": {
+      "type": "boolean",
+      "title": "Mod 8 · Procurador según el procedimiento y la cuantía",
+      "description": "Avisa si la ficha del expediente activo exige procurador (arts. 23 y 31 LEC) y no lo tiene. Comando /ficha.",
+      "default": true
+    },
+    "mod_anonimizar": {
+      "type": "boolean",
+      "title": "Mod 9 · Copia anonimizada con Anonimizator",
+      "description": "Al terminar un escrito con datos personales, lo pasa a tu conector de Anonimizator y guarda al lado una copia anonimizada (el original no se toca). Necesita el conector de Anonimizator con tu URL personal (anonimizator.org/conector, plan de pago). Comando /anonimizar.",
+      "default": false
+    },
+    "mod_siguientes": {
+      "type": "boolean",
+      "title": "Mod 10 · Siguientes pasos",
+      "description": "Al terminar un escrito, un panel con las tres peticiones más probables (ordenadas por Claude con el modelo pequeño y tu historial) para lanzarlas con un clic. Gasta una llamada corta por escrito. Comando /siguientes.",
+      "default": true
+    }
+  }
+}

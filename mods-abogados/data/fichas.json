@@ -1,0 +1,38 @@
+{
+  "_nota": "Fichas de expediente (Mods 7 y 8). Datos FICTICIOS de demostración. Clave: número de expediente (o nombre del cliente sin tildes). Las edita el panel /ficha y el comando /masc; también a mano.",
+  "fichas": {
+    "0456/2026": {
+      "procedimiento": "verbal-materia",
+      "cuantia": 14400,
+      "procurador": "D. Luis Pérez García",
+      "masc": {
+        "medio": "burofax",
+        "fecha": "2026-09-25",
+        "documento": "DOC. 5 · burofax de 25/09/2026 y certificado de entrega de 28/09/2026",
+        "nota": "Requerimiento de pago con oferta de pago fraccionado en dos plazos; entregado el 28/09/2026; sin respuesta (art. 10.2 y 10.4.a LO 1/2025)."
+      },
+      "nota": "Desahucio por falta de pago de local con reclamación de 4.800 € de rentas (arts. 250.1.1.º y 437.4.3.ª LEC). Cuantía del desahucio: una anualidad de renta (art. 251.9.ª LEC)."
+    },
+    "0123/2026": {
+      "procedimiento": "verbal-cuantia",
+      "cuantia": 2340,
+      "nota": "Reclamación a la aseguradora por los daños del coche. Falta designar procurador y acreditar el intento de negociación previa (la reclamación del art. 7 LRCSCVM está por verificar como MASC)."
+    },
+    "Divorcio contencioso 1452/2026 (TI Zaragoza, Familia, Plaza 2)": {
+      "procedimiento": "verbal-materia",
+      "procurador": "D.ª Carmen Lasierra Pueyo",
+      "masc": {
+        "medio": "mediacion",
+        "fecha": "2026-09-10",
+        "documento": "DOC. 13 · burofax de 15/07/2026 y acta de mediación sin acuerdo de 10/09/2026",
+        "nota": "Mediación propuesta por la actora; sesión sin acuerdo (art. 10.3 LO 1/2025). Somos la parte demandada."
+      },
+      "nota": "FICTICIO (vídeo de los mods). Contestación a la demanda de divorcio contencioso: 20 días desde el 06/11/2026."
+    },
+    "Modificación de medidas Sanz-Gracia (pendiente de presentar)": {
+      "procedimiento": "verbal-materia",
+      "procurador": "D.ª Carmen Lasierra Pueyo",
+      "nota": "FICTICIO (vídeo de los mods). Subida de la pensión de alimentos de 250 € a 480 €/mes (art. 775 LEC). No consta intento de negociación previa."
+    }
+  }
+}

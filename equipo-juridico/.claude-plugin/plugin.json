@@ -1,0 +1,9 @@
+{
+  "name": "equipo-juridico",
+  "version": "3.6.0",
+  "description": "Convierte las tareas en segundo plano y los subagentes en un equipo jurídico de 8 personas (María la secretaria, Luis el picapleitos, Juan el buscador de jurisprudencia…), cada una con su personaje en una oficina animada, con ficha, banda de una fila y avance del escrito, todo en lenguaje llano.",
+  "author": { "name": "Derecho Virtual" },
+  "license": "MIT",
+  "keywords": ["mod", "abogados", "subagentes", "equipo", "derecho virtual"],
+  "types": "./types/index.d.ts"
+}

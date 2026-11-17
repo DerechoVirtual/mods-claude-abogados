@@ -1,0 +1,31 @@
+{
+  "_nota": "Mod 7 · Semáforo MASC (requisito de procedibilidad del art. 5 LO 1/2025; acreditación documental del art. 10). REGLA ORIENTATIVA: DEBE VALIDARLA UN ABOGADO antes de usarla. Comprobada el 09/11/2026 con el texto vigente (BOE-A-2025-76) en Jurisprudenciator. El desahucio por falta de pago NO está entre las excepciones. jurisdicciones: órdenes de los clientes (config/clientes.json) en que se exige. patronesDemanda y excluir: trozos de la ruta del archivo (sin tildes) que indican una demanda o algo que no lo es. excepciones: materias del art. 5.2 y 5.3 que se marcan en la ficha del expediente.",
+  "aviso": "Sin MASC acreditado",
+  "jurisdicciones": ["civil", "familia"],
+  "patronesDemanda": ["demanda"],
+  "excluir": ["contestacion", "ejecutiva", "ejecucion"],
+  "medios": {
+    "burofax": "Burofax con propuesta de negociación",
+    "mediacion": "Mediación",
+    "oferta-vinculante": "Oferta vinculante confidencial",
+    "conciliacion": "Conciliación",
+    "negociacion-directa": "Negociación directa entre las partes o sus abogados",
+    "experto-independiente": "Opinión de persona experta independiente",
+    "derecho-colaborativo": "Derecho colaborativo"
+  },
+  "excepciones": {
+    "derechos-fundamentales": "Tutela judicial civil de derechos fundamentales (art. 5.2.a)",
+    "medidas-158-cc": "Medidas del art. 158 CC (art. 5.2.b)",
+    "apoyo-discapacidad": "Medidas de apoyo a personas con discapacidad (art. 5.2.c)",
+    "filiacion": "Filiación, paternidad y maternidad (art. 5.2.d)",
+    "tutela-sumaria-posesion": "Tutela sumaria de la tenencia o la posesión (art. 5.2.e)",
+    "ruina": "Demolición o derribo por ruina (art. 5.2.f)",
+    "menores": "Ingreso de menores, entrada en domicilios o restitución de menores (art. 5.2.g)",
+    "cambiario": "Juicio cambiario (art. 5.2.h)",
+    "ejecutiva": "Demanda ejecutiva (art. 5.3)",
+    "cautelares-previas": "Medidas cautelares previas a la demanda (art. 5.3)",
+    "diligencias-preliminares": "Diligencias preliminares (art. 5.3)",
+    "monitorio-europeo": "Requerimiento europeo de pago (art. 5.3)",
+    "escasa-cuantia-europeo": "Proceso europeo de escasa cuantía (art. 5.3)"
+  }
+}

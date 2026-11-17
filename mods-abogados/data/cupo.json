@@ -1,0 +1,15 @@
+{
+  "_nota": "Cuenta del cupo de Jurisprudenciator en este ordenador. La lleva el mod; /cupo para verla o corregirla.",
+  "dia": "",
+  "semana": "",
+  "usadoDia": 0,
+  "usadoSemana": 0,
+  "agotadoDia": false,
+  "agotadoSemana": false,
+  "limites": {
+    "diario": null,
+    "semanal": null,
+    "origen": ""
+  },
+  "ultimas": []
+}

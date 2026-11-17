@@ -1,0 +1,11 @@
+{
+  "_nota": "Cupo de Jurisprudenciator (Mod 5). limitesIniciales: los del plan Gratis; se corrigen solos y con /cupo <día> <semana>. pesos: lo que gasta cada herramienta ('porCita' = 1 por sentencia pedida). avisarCuandoQueden: desde cuántas lecturas restantes avisa.",
+  "limitesIniciales": { "diario": 10, "semanal": 30 },
+  "avisarCuandoQueden": 3,
+  "pesos": {
+    "leer_sentencias": "porCita",
+    "buscar_articulo": 0.5,
+    "buscar_por_cita": 0,
+    "buscar_sentencias": 0
+  }
+}

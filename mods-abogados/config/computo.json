@@ -1,0 +1,30 @@
+{
+  "_nota": "Reglas de cómputo del Mod 1 y del Mod 3. Son ajustes, no verdades: revísalos con la norma aplicable. Base (texto vigente consultado el 08/11/2026): arts. 182 y 183 LOPJ (red. LO 14/2022), 130.2 y 135.5 LEC, 128.2 LJCA, 43.4 LRJS y 201 LECrim. Las excepciones de un plazo concreto (despido, derechos fundamentales, actuaciones urgentes) se marcan en el propio plazo con «Agosto y 24 dic–6 ene hábiles».",
+  "jurisdicciones": {
+    "civil": {
+      "agostoInhabil": true,
+      "navidadInhabil": true,
+      "nota": "arts. 130.2 LEC y 183 LOPJ"
+    },
+    "contencioso": {
+      "agostoInhabil": true,
+      "navidadInhabil": true,
+      "nota": "art. 128.2 LJCA (agosto hábil en derechos fundamentales) y art. 183 LOPJ"
+    },
+    "laboral": {
+      "agostoInhabil": true,
+      "navidadInhabil": true,
+      "nota": "art. 43.4 LRJS (hábiles en despido y demás modalidades que enumera)"
+    },
+    "penal": {
+      "agostoInhabil": false,
+      "navidadInhabil": false,
+      "nota": "instrucción: art. 201 LECrim. Para enjuiciamiento o recursos contra sentencias pon true (art. 183 LOPJ)"
+    }
+  },
+  "lexnet15h": false,
+  "umbrales": {
+    "verdeMasDe": 5,
+    "ambarDesde": 2
+  }
+}

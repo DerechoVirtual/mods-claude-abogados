@@ -1,0 +1,56 @@
+{
+  "_nota": "Datos FICTICIOS de ejemplo. Lo editan /plazo-nuevo y /plazo-borrar; los borrados se guardan en «papelera». Para regenerarlos respecto a hoy: /plazo-nuevo ejemplo o el botón «Cargar ejemplo de hoy».",
+  "plazos": [
+    {
+      "asunto": "García c. Aseguradora Ficticia",
+      "tipo": "Contestación a la demanda (ordinario)",
+      "jurisdiccion": "civil",
+      "dias": 20,
+      "cliente": "García",
+      "id": "ejemplo-1",
+      "notificacion": "2026-10-14",
+      "creado": "2026-11-08"
+    },
+    {
+      "asunto": "López c. Talleres Inventados",
+      "tipo": "Recurso de apelación",
+      "jurisdiccion": "civil",
+      "dias": 20,
+      "cliente": "López",
+      "id": "ejemplo-2",
+      "notificacion": "2026-10-27",
+      "creado": "2026-11-08"
+    },
+    {
+      "asunto": "Comunidad Calle Imaginaria 12",
+      "tipo": "Recurso de reposición",
+      "jurisdiccion": "civil",
+      "dias": 5,
+      "cliente": "Comunidad Calle Imaginaria",
+      "id": "ejemplo-3",
+      "notificacion": "2026-11-02",
+      "creado": "2026-11-08"
+    },
+    {
+      "asunto": "Ruiz c. Ayuntamiento de Villaejemplo",
+      "tipo": "Demanda contencioso-administrativa",
+      "jurisdiccion": "contencioso",
+      "dias": 20,
+      "id": "ejemplo-4",
+      "notificacion": "2026-10-21",
+      "creado": "2026-11-08"
+    },
+    {
+      "asunto": "Pérez (despido ficticio)",
+      "tipo": "Demanda de despido",
+      "jurisdiccion": "laboral",
+      "dias": 20,
+      "especialesHabiles": true,
+      "cliente": "López",
+      "id": "ejemplo-5",
+      "notificacion": "2026-10-08",
+      "creado": "2026-11-08"
+    }
+  ],
+  "papelera": []
+}

@@ -1,0 +1,137 @@
+{
+  "_nota": "Mod 10 · Siguientes pasos. Tabla ORIENTATIVA de las actuaciones que suelen venir después de cada escrito; DEBE VALIDARLA UN ABOGADO. Plazos y artículos comprobados el 09/11/2026 con el texto vigente en Jurisprudenciator (arts. 407, 414, 438, 440, 458 y 461 LEC; art. 10 LO 1/2025). tipos: cómo se reconoce el escrito terminado (trozos de su nombre, sin tildes; o el procedimiento de la ficha) y qué actuaciones se proponen, en orden. acciones: etiqueta, porqué, plazo (días hábiles y desde cuándo) y la petición que se envía a Claude. Claude (modelo pequeño) ordena y concreta las candidatas; si falla, se usan las tres primeras de la tabla, con el historial de lo que se eligió otras veces.",
+  "tipos": [
+    {
+      "id": "demanda-desahucio",
+      "nombre": "Demanda de desahucio",
+      "patrones": ["demanda", "desahucio"],
+      "acciones": ["preparar-vista", "ejecucion-desahucio", "carta-cliente", "proposicion-prueba-verbal"]
+    },
+    {
+      "id": "demanda-verbal",
+      "nombre": "Demanda de juicio verbal",
+      "patrones": ["demanda", "verbal"],
+      "procedimientos": ["verbal-cuantia", "verbal-materia"],
+      "acciones": ["proposicion-prueba-verbal", "preparar-vista", "carta-cliente", "contestar-reconvencion-verbal", "medidas-cautelares"]
+    },
+    {
+      "id": "demanda-ordinario",
+      "nombre": "Demanda de juicio ordinario",
+      "patrones": ["demanda", "ordinario"],
+      "procedimientos": ["ordinario"],
+      "acciones": ["preparar-audiencia-previa", "contestar-reconvencion-ordinario", "carta-cliente", "medidas-cautelares"]
+    },
+    {
+      "id": "contestacion",
+      "nombre": "Contestación a la demanda",
+      "patrones": ["contestacion"],
+      "acciones": ["preparar-audiencia-previa", "proposicion-prueba-verbal", "carta-cliente", "minuta"]
+    },
+    {
+      "id": "recurso-apelacion",
+      "nombre": "Recurso de apelación",
+      "patrones": ["apelacion"],
+      "acciones": ["carta-cliente", "minuta", "oposicion-apelacion"]
+    },
+    {
+      "id": "requerimiento",
+      "nombre": "Burofax o requerimiento",
+      "patrones": ["burofax"],
+      "acciones": ["demanda-tras-requerimiento", "carta-cliente", "minuta"]
+    },
+    {
+      "id": "requerimiento-2",
+      "nombre": "Burofax o requerimiento",
+      "patrones": ["requerimiento"],
+      "acciones": ["demanda-tras-requerimiento", "carta-cliente", "minuta"]
+    },
+    {
+      "id": "demanda",
+      "nombre": "Demanda",
+      "patrones": ["demanda"],
+      "acciones": ["carta-cliente", "preparar-audiencia-previa", "preparar-vista", "medidas-cautelares"]
+    },
+    {
+      "id": "otro",
+      "nombre": "Escrito",
+      "patrones": [],
+      "acciones": ["carta-cliente", "minuta", "recurso-apelacion"]
+    }
+  ],
+  "acciones": {
+    "preparar-vista": {
+      "etiqueta": "Preparar la vista del juicio verbal",
+      "porque": "Si hay oposición, la vista se celebra como mucho en un mes desde la citación (art. 440 LEC): guion, interrogatorios y documentos.",
+      "plazoTexto": "La vista, dentro de un mes desde la citación (art. 440 LEC)",
+      "peticion": "Prepárame la vista del juicio verbal: guion de la intervención, preguntas para el interrogatorio de la parte contraria y de los testigos, y la lista de documentos que hay que llevar."
+    },
+    "ejecucion-desahucio": {
+      "etiqueta": "Pedir la ejecución de las rentas tras el decreto",
+      "porque": "Si la demandada no se opone ni paga, el decreto termina el desahucio con las rentas posteriores y la cantidad se reclama instando la ejecución (art. 438.5 LEC).",
+      "plazoTexto": "Requerimiento al demandado: 10 días (art. 438.5 LEC)",
+      "peticion": "Prepárame la solicitud de ejecución de las rentas debidas para el caso de que la demandada no se oponga ni pague y se dicte el decreto que termina el desahucio (art. 438.5 LEC)."
+    },
+    "proposicion-prueba-verbal": {
+      "etiqueta": "Escrito de proposición de prueba",
+      "porque": "En el verbal, tras la contestación hay un plazo común de 5 días para proponer prueba y alegar sobre las excepciones procesales (art. 438.8 LEC).",
+      "plazo": { "dias": 5, "jurisdiccion": "civil", "desde": "el traslado de la contestación" },
+      "plazoTexto": "5 días desde el traslado de la contestación (art. 438.8 LEC)",
+      "peticion": "Prepárame el escrito de proposición de prueba del juicio verbal (art. 438.8 LEC), con las alegaciones sobre las excepciones procesales que haya planteado la contraria."
+    },
+    "preparar-audiencia-previa": {
+      "etiqueta": "Preparar la audiencia previa",
+      "porque": "Contestada la demanda, se convoca en tres días y se celebra en veinte (art. 414.1 LEC): acuerdo, cuestiones procesales, hechos controvertidos y prueba.",
+      "plazoTexto": "Se celebra dentro de 20 días desde la convocatoria (art. 414.1 LEC)",
+      "peticion": "Prepárame la audiencia previa: posibles cuestiones procesales, hechos controvertidos, la proposición de prueba y una propuesta de acuerdo para intentar la transacción (art. 414 LEC)."
+    },
+    "contestar-reconvencion-ordinario": {
+      "etiqueta": "Contestación a la reconvención",
+      "porque": "Si la contraria reconviene en el ordinario, hay 20 días desde la notificación para contestar (art. 407.2 LEC).",
+      "plazo": { "dias": 20, "jurisdiccion": "civil", "desde": "la notificación de la reconvención" },
+      "plazoTexto": "20 días desde la notificación de la reconvención (art. 407.2 LEC)",
+      "peticion": "Prepárame la contestación a la reconvención que formule la parte contraria (art. 407.2 LEC)."
+    },
+    "contestar-reconvencion-verbal": {
+      "etiqueta": "Contestación a la reconvención",
+      "porque": "En el verbal, la reconvención se contesta en 10 días (art. 438.2 LEC).",
+      "plazo": { "dias": 10, "jurisdiccion": "civil", "desde": "la notificación de la reconvención" },
+      "plazoTexto": "10 días desde la notificación de la reconvención (art. 438.2 LEC)",
+      "peticion": "Prepárame la contestación a la reconvención del juicio verbal (art. 438.2 LEC)."
+    },
+    "recurso-apelacion": {
+      "etiqueta": "Recurso de apelación contra la sentencia",
+      "porque": "Si la sentencia es desfavorable, se recurre en 20 días desde su notificación (art. 458.1 LEC).",
+      "plazo": { "dias": 20, "jurisdiccion": "civil", "desde": "la notificación de la sentencia" },
+      "plazoTexto": "20 días desde la notificación de la sentencia (art. 458.1 LEC)",
+      "peticion": "Prepárame el recurso de apelación contra la sentencia (art. 458 LEC)."
+    },
+    "oposicion-apelacion": {
+      "etiqueta": "Oposición al recurso de la contraria",
+      "porque": "Del recurso de apelación se da traslado por 10 días para oponerse o impugnar la resolución (art. 461.1 LEC).",
+      "plazo": { "dias": 10, "jurisdiccion": "civil", "desde": "el traslado del recurso" },
+      "plazoTexto": "10 días desde el traslado del recurso (art. 461.1 LEC)",
+      "peticion": "Prepárame el escrito de oposición al recurso de apelación de la parte contraria y, si conviene, de impugnación de la sentencia en lo que nos sea desfavorable (art. 461 LEC)."
+    },
+    "demanda-tras-requerimiento": {
+      "etiqueta": "Demanda si no responde al requerimiento",
+      "porque": "Pasados 30 días naturales desde la recepción sin respuesta, la negociación previa termina sin acuerdo (art. 10.4.a LO 1/2025).",
+      "plazoTexto": "30 días naturales desde la recepción del requerimiento (art. 10.4.a LO 1/2025)",
+      "peticion": "Prepárame la demanda para el caso de que la parte contraria no responda al requerimiento, dejando acreditado el intento de negociación previa (arts. 5 y 10 LO 1/2025)."
+    },
+    "carta-cliente": {
+      "etiqueta": "Carta al cliente explicando el escrito",
+      "porque": "El cliente tiene que saber qué se ha presentado, qué puede pasar ahora y qué plazos vienen.",
+      "peticion": "Redáctame una carta al cliente, clara y sin tecnicismos, que explique el escrito que acabamos de terminar, qué puede pasar ahora y qué plazos vienen."
+    },
+    "minuta": {
+      "etiqueta": "Minuta de honorarios orientativa",
+      "porque": "Con el escrito hecho, es buen momento para dejar preparada la minuta o la provisión de fondos.",
+      "peticion": "Prepárame una minuta de honorarios orientativa por este escrito y, si procede, la solicitud de provisión de fondos."
+    },
+    "medidas-cautelares": {
+      "etiqueta": "Solicitud de medidas cautelares",
+      "porque": "Si hay riesgo de que la sentencia no pueda cumplirse, conviene pedirlas cuanto antes (arts. 721 y ss. LEC).",
+      "peticion": "Valora si procede pedir medidas cautelares y, si procede, prepárame la solicitud (arts. 721 y ss. LEC)."
+    }
+  }
+}

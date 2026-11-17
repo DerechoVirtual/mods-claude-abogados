@@ -1,0 +1,36 @@
+{
+  "_nota": "Configuración del Mod 2 (revisor de citas). «herramientasVerificacion»: herramientas cuyo resultado cuenta como respaldo de una cita. Cada entrada es un trozo del nombre (sin distinguir mayúsculas; vale para cualquier servidor MCP, p. ej. «buscar_por_cita» encaja con mcp__jurisprudenciator__buscar_por_cita) o una expresión regular entre barras, como «/^mcp__mi_servidor__/». «leyes»: siglas y nombres que el revisor reconoce tras «art.»; «maxArticulo» es el último artículo de la norma (comprobado el 08/11/2026 con el texto consolidado del BOE) y sirve para marcar en rojo un artículo imposible. Revísalo si la norma cambia.",
+  "herramientasVerificacion": [
+    "buscar_articulo",
+    "buscar_sentencias",
+    "buscar_por_cita",
+    "leer_sentencias",
+    "continuar_lectura",
+    "leer_boe",
+    "buscar_boe",
+    "verificar"
+  ],
+  "excluirHerramientas": [],
+  "analizarArchivosEscritos": true,
+  "leyes": [
+    { "clave": "CE", "nombre": "Constitución Española", "alias": ["CE", "C.E.", "Constitución Española", "Constitución"], "maxArticulo": 169 },
+    { "clave": "CC", "nombre": "Código Civil", "alias": ["CC", "C.C.", "C.c.", "Código Civil"], "maxArticulo": 1976 },
+    { "clave": "LEC", "nombre": "Ley de Enjuiciamiento Civil", "alias": ["LEC", "L.E.C.", "Ley de Enjuiciamiento Civil"], "numeros": ["Ley 1/2000"], "maxArticulo": 827 },
+    { "clave": "LECrim", "nombre": "Ley de Enjuiciamiento Criminal", "alias": ["LECrim", "LECRIM", "LECr", "L.E.Crim.", "Ley de Enjuiciamiento Criminal"], "maxArticulo": 999 },
+    { "clave": "CP", "nombre": "Código Penal", "alias": ["CP", "C.P.", "Código Penal"], "numeros": ["LO 10/1995"], "maxArticulo": 639 },
+    { "clave": "ET", "nombre": "Estatuto de los Trabajadores", "alias": ["ET", "E.T.", "Estatuto de los Trabajadores"], "numeros": ["RDLeg 2/2015"], "maxArticulo": 92 },
+    { "clave": "LJCA", "nombre": "Ley de la Jurisdicción Contencioso-administrativa", "alias": ["LJCA", "Ley de la Jurisdicción Contencioso-administrativa", "Ley reguladora de la Jurisdicción Contencioso-administrativa"], "numeros": ["Ley 29/1998"], "maxArticulo": 139 },
+    { "clave": "LRJS", "nombre": "Ley reguladora de la Jurisdicción Social", "alias": ["LRJS", "Ley reguladora de la Jurisdicción Social"], "numeros": ["Ley 36/2011"], "maxArticulo": 305 },
+    { "clave": "LOPJ", "nombre": "Ley Orgánica del Poder Judicial", "alias": ["LOPJ", "Ley Orgánica del Poder Judicial"], "numeros": ["LO 6/1985"] },
+    { "clave": "LPAC", "nombre": "Ley del Procedimiento Administrativo Común", "alias": ["LPAC", "LPACAP", "Ley del Procedimiento Administrativo Común"], "numeros": ["Ley 39/2015"], "maxArticulo": 133 },
+    { "clave": "LRJSP", "nombre": "Ley de Régimen Jurídico del Sector Público", "alias": ["LRJSP", "Ley de Régimen Jurídico del Sector Público"], "numeros": ["Ley 40/2015"], "maxArticulo": 158 },
+    { "clave": "LGT", "nombre": "Ley General Tributaria", "alias": ["LGT", "Ley General Tributaria"], "numeros": ["Ley 58/2003"] },
+    { "clave": "LAU", "nombre": "Ley de Arrendamientos Urbanos", "alias": ["LAU", "Ley de Arrendamientos Urbanos"], "numeros": ["Ley 29/1994"] },
+    { "clave": "LSC", "nombre": "Ley de Sociedades de Capital", "alias": ["LSC", "Ley de Sociedades de Capital"], "numeros": ["RDLeg 1/2010"] },
+    { "clave": "LPH", "nombre": "Ley de Propiedad Horizontal", "alias": ["LPH", "Ley de Propiedad Horizontal"], "numeros": ["Ley 49/1960"] },
+    { "clave": "LH", "nombre": "Ley Hipotecaria", "alias": ["LH", "Ley Hipotecaria"] },
+    { "clave": "LCS", "nombre": "Ley de Contrato de Seguro", "alias": ["LCS", "Ley de Contrato de Seguro"], "numeros": ["Ley 50/1980"] },
+    { "clave": "TRLC", "nombre": "Texto Refundido de la Ley Concursal", "alias": ["TRLC", "Ley Concursal"], "numeros": ["RDLeg 1/2020"] },
+    { "clave": "TRLGDCU", "nombre": "Ley General para la Defensa de los Consumidores y Usuarios", "alias": ["TRLGDCU", "LGDCU", "Ley General para la Defensa de los Consumidores y Usuarios"], "numeros": ["RDLeg 1/2007"] }
+  ]
+}

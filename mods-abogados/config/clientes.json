@@ -1,0 +1,223 @@
+{
+  "_nota": "Clientes y expedientes FICTICIOS de los casos de demostración de los vídeos y clases de Derecho Virtual (septiembre a noviembre de 2026; cada uno lleva la marca de ficticio en su propio material). No hay ningún cliente de Despachator: ese conector devuelve los nombres seudonimizados y pueden ser reales. «carpeta» es opcional (absoluta o relativa a la carpeta donde abres Claude Code) y sirve para el aviso de expediente cruzado; los clientes que comparten carpeta con otros (los de la clase del bot de notificaciones y el de la demo del equipo jurídico) no la llevan, para no dar avisos falsos. «color» es opcional (#RRGGBB o un nombre de la paleta: azul, violeta, cian, magenta, índigo, turquesa, granate, celeste, ciruela, pizarra). «asunto» y «jurisdiccion» también se buscan con /cliente.",
+  "clientes": [
+    {
+      "nombre": "García",
+      "expediente": "0123/2026",
+      "asunto": "Reclamación de 2.340 € por daños en su coche c. Aseguradora Ficticia, S.A.",
+      "jurisdiccion": "civil",
+      "color": "#2F6FED"
+    },
+    {
+      "nombre": "López",
+      "expediente": "0456/2026",
+      "asunto": "Impago de tres rentas de un local arrendado c. Talleres Inventados, S.L.",
+      "jurisdiccion": "civil",
+      "color": "#C2389E"
+    },
+    {
+      "nombre": "Comunidad Calle Imaginaria",
+      "expediente": "0789/2026",
+      "asunto": "Reclamación de cuotas impagadas (860 €) a un vecino",
+      "jurisdiccion": "civil",
+      "color": "#0F7C70"
+    },
+    {
+      "nombre": "Álvaro Mendieta",
+      "asunto": "Vicios ocultos en vivienda (55.098,56 €) c. Gonzalo Echevarría Lumbreras y María Rosario Villalta Peña",
+      "jurisdiccion": "civil",
+      "color": "#2F6FED"
+    },
+    {
+      "nombre": "Climatizaciones Henares Instalaciones, S.L.",
+      "asunto": "Reclamación de facturas impagadas (12.400 €) c. Restaurante La Alacena de Chamberí, S.L.",
+      "jurisdiccion": "civil",
+      "color": "#7C4DDB"
+    },
+    {
+      "nombre": "Marta Iglesias Cordero",
+      "expediente": "2026/0147",
+      "asunto": "Resolución por aliud pro alio (Tiguan con cuentakilómetros manipulado) c. Automoción Nova Castilla, S.L. y Norte Consumer Finance",
+      "jurisdiccion": "civil",
+      "color": "#0E9AB3"
+    },
+    {
+      "nombre": "Javier Martínez López",
+      "asunto": "Resolución de contrato de aerotermia y reclamación de cantidad c. Climatización Total, S.L.",
+      "jurisdiccion": "civil",
+      "color": "#C2389E"
+    },
+    {
+      "nombre": "Lucía Herrera y Javier Ortega Molina",
+      "expediente": "2026/0187",
+      "asunto": "Vicios ocultos en vivienda (humedades tapadas con pintura) c. Rafael Domínguez Pineda",
+      "jurisdiccion": "civil",
+      "color": "#4F46C8"
+    },
+    {
+      "nombre": "Marta Ruiz Espinosa",
+      "expediente": "JO 1287/2026 (TI Sevilla, Civil, Plaza 9)",
+      "asunto": "Contestación a la demanda de Reformas Arbolí Sur, S.L. (reforma de cocina y baños, 24.600 €)",
+      "jurisdiccion": "civil",
+      "color": "#0F7C70"
+    },
+    {
+      "nombre": "Marta Linares y Javier Robles",
+      "expediente": "CIV-2026-0147",
+      "asunto": "Vicios ocultos en vivienda c. Federico Almansa Rubio",
+      "jurisdiccion": "civil",
+      "color": "#A3214A"
+    },
+    {
+      "nombre": "Marta Quintana",
+      "expediente": "JV 1287/2026 (TI Madrid, Civil, Plaza 14)",
+      "asunto": "Defensa frente a una reclamación de rentas de alquiler (9.640 €) de Gestión Patrimonial Retiro, S.L.",
+      "jurisdiccion": "civil",
+      "color": "#3E8ED0"
+    },
+    {
+      "nombre": "Talleres Arriaga Hermanos, S.L.",
+      "expediente": "ETNJ 503/2026 (TI Bilbao, Civil, Plaza 2)",
+      "asunto": "Ejecutada, con su fiador, en la ejecución de una póliza de préstamo instada por Banca Cantábrica de Crédito, S.A.",
+      "jurisdiccion": "civil",
+      "color": "#8E3B8C"
+    },
+    {
+      "nombre": "Jordi Puig y Montserrat Vidal",
+      "expediente": "Rollo 877/2025 (AP Barcelona, Secc. 15.ª)",
+      "asunto": "Apelación sobre la cláusula de gastos de un préstamo hipotecario c. Caixa Mediterrània de Crèdit, S.A.",
+      "jurisdiccion": "civil",
+      "color": "#4A6380"
+    },
+    {
+      "nombre": "Elena Ruiz Serrano",
+      "asunto": "Defectos de construcción en vivienda c. Alberto Gil Navarro (vendedor) y Construcciones Almenara del Sur, S.L.",
+      "jurisdiccion": "civil",
+      "color": "#2F6FED"
+    },
+    {
+      "nombre": "Nuria Salcedo",
+      "asunto": "Divorcio contencioso con dos hijos menores c. Andrés Villalba Ruiz",
+      "jurisdiccion": "familia",
+      "color": "#7C4DDB"
+    },
+    {
+      "nombre": "Laura Benítez",
+      "expediente": "Divorcio contencioso 1187/2026 (TI Madrid, Familia, Plaza 24)",
+      "asunto": "Divorcio contencioso con dos hijos menores c. Javier Ortega Salas (vista del 14/10/2026)",
+      "jurisdiccion": "familia",
+      "color": "#0E9AB3"
+    },
+    {
+      "nombre": "Ana Torres",
+      "asunto": "Divorcio contencioso c. Luis García",
+      "jurisdiccion": "familia",
+      "color": "#C2389E"
+    },
+    {
+      "nombre": "Elena Robles",
+      "expediente": "Divorcio contencioso 412/2026 (TI Málaga, Familia, Plaza 7)",
+      "asunto": "Divorcio contencioso con hijos menores c. Sergio Martín Ayala",
+      "jurisdiccion": "familia",
+      "color": "#4F46C8"
+    },
+    {
+      "nombre": "Laura Giménez",
+      "expediente": "Divorcio contencioso 415/2026 (JPI 7 Familia Sevilla)",
+      "asunto": "Divorcio contencioso con hijos menores c. Roberto Salinas Méndez",
+      "jurisdiccion": "familia",
+      "color": "#0F7C70"
+    },
+    {
+      "nombre": "Lucía Ferrer Montaner",
+      "asunto": "Despido nulo por embarazo (subsidiariamente improcedente) c. Logística Turia Express, S.L.",
+      "jurisdiccion": "laboral",
+      "color": "#A3214A"
+    },
+    {
+      "nombre": "Andrés Villalobos",
+      "expediente": "Despidos 914/2026 (TI Sevilla, Social, Plaza 3)",
+      "asunto": "Despido disciplinario c. Montajes Eléctricos Guadalquivir, S.L.",
+      "jurisdiccion": "laboral",
+      "color": "#3E8ED0"
+    },
+    {
+      "nombre": "Comercial Ejemplo, S.L.",
+      "asunto": "Despido disciplinario de Ana Gómez (contestación a la demanda)",
+      "jurisdiccion": "laboral",
+      "color": "#8E3B8C"
+    },
+    {
+      "nombre": "Carpintería Romero Garrido, S.L.",
+      "asunto": "Querella por estafa (maquinaria pagada y no entregada) c. «Sergio Almansa Ferrer» y Maquinaria Levante Pro Soluciones Industriales, S.L.",
+      "jurisdiccion": "penal",
+      "color": "#4A6380"
+    },
+    {
+      "nombre": "Remedios Castañar",
+      "expediente": "PEN-2026-031",
+      "asunto": "Querella por estafa (falsa inversión inmobiliaria) c. Reformas e Inversiones Horizonte Dorado, S.L. y sus administradores",
+      "jurisdiccion": "penal",
+      "color": "#2F6FED"
+    },
+    {
+      "nombre": "Rodrigo Esteve",
+      "expediente": "DP 2231/2025 (TI Valencia, Instrucción, Plaza 5)",
+      "asunto": "Defensa del investigado por apropiación indebida (acusación particular: Construcciones Levante Mar, S.L.)",
+      "jurisdiccion": "penal",
+      "color": "#7C4DDB"
+    },
+    {
+      "nombre": "Lucía Barragán Ortega",
+      "asunto": "Recurso de alzada contra la plantilla definitiva de la oposición C1.1000 (Tribunal Calificador / IAAP, Junta de Andalucía)",
+      "jurisdiccion": "contencioso",
+      "color": "#0E9AB3"
+    },
+    {
+      "nombre": "Daniel Olmedo",
+      "expediente": "EXP-FICT-GPA-2026/0417",
+      "asunto": "Recurso de alzada c. resolución del Tribunal Calificador (oposiciones de Gestión Procesal)",
+      "jurisdiccion": "contencioso",
+      "color": "#C2389E"
+    },
+    {
+      "nombre": "Hostelería Ebro Norte, S.L.",
+      "expediente": "PO 156/2026 (TI Zaragoza, Contencioso-administrativo, Plaza 2)",
+      "asunto": "Recurso contencioso-administrativo contra una sanción urbanística del Ayuntamiento de Zaragoza",
+      "jurisdiccion": "contencioso",
+      "color": "#4F46C8"
+    },
+    {
+      "nombre": "Andrés Felipe Cárdenas",
+      "expediente": "Exp. extranjería 419920260031874",
+      "asunto": "Recurso de reposición contra la denegación del arraigo sociolaboral (Subdelegación del Gobierno en Sevilla)",
+      "jurisdiccion": "extranjería",
+      "color": "#0F7C70"
+    },
+    {
+      "nombre": "Pablo Martínez Moreno",
+      "expediente": "Cliente 014",
+      "asunto": "Modelos 303 y 130 del 3T 2026 (cliente de la gestoría ficticia Montalbán & Asociados)",
+      "jurisdiccion": "otra",
+      "color": "#A3214A"
+    },
+    {
+      "nombre": "laura perez",
+      "color": "#0E9AB3"
+    },
+    {
+      "nombre": "Marcos Ibáñez",
+      "expediente": "Divorcio contencioso 1452/2026 (TI Zaragoza, Familia, Plaza 2)",
+      "asunto": "Contestación a la demanda de divorcio de Silvia Cortés Lasheras (dos hijos menores) · vídeo de los mods 09/11/2026",
+      "jurisdiccion": "familia",
+      "color": "#2F6FED"
+    },
+    {
+      "nombre": "Lorena Sanz",
+      "expediente": "Modificación de medidas Sanz-Gracia (pendiente de presentar)",
+      "asunto": "Modificación de medidas: subida de la pensión de alimentos de Daniel c. Iván Gracia Muro · vídeo de los mods 09/11/2026",
+      "jurisdiccion": "familia",
+      "color": "#C2389E"
+    }
+  ]
+}

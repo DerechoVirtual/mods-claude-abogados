@@ -1,0 +1,32 @@
+{
+  "name": "mods-derecho-virtual",
+  "owner": { "name": "Derecho Virtual" },
+  "description": "Los mods de Claude Code de Derecho Virtual para abogados: plazos, citas, equipo jurídico, el abogado contrario y más.",
+  "plugins": [
+    {
+      "name": "mods-abogados",
+      "source": "./mods-abogados",
+      "description": "Diez mods para abogados: plazos (también los de un escrito judicial), revisor de citas, cuenta atrás, un color por cliente, cupo de Jurisprudenciator, el abogado contrario, MASC, procurador, copia anonimizada y siguientes pasos."
+    },
+    {
+      "name": "equipo-juridico",
+      "source": "./equipo-juridico",
+      "description": "Tareas en segundo plano y subagentes contados como un equipo jurídico con nombre y oficio, en una oficina en pixel art."
+    },
+    {
+      "name": "azul-claro",
+      "source": "./azul-claro",
+      "description": "Claude en azul claro: mensajes sobre azul translúcido; /azul lo enciende y apaga."
+    },
+    {
+      "name": "modo-voz",
+      "source": "./modo-voz",
+      "description": "Modo voz y dictado: hablas, Claude te contesta en voz alta. /voz y /dictar. Necesita ffmpeg, Python y una clave de OpenAI."
+    },
+    {
+      "name": "entorno-emoji",
+      "source": "./entorno-emoji",
+      "description": "Muestra encima del prompt un emoji y el nombre de la carpeta en la que trabajas."
+    }
+  ]
+}

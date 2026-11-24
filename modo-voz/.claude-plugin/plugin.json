@@ -1,6 +1,0 @@
-{
-  "name": "modo-voz",
-  "version": "0.1.0",
-  "description": "Modo voz como el del chat: hablas, Claude te contesta en voz alta y te vuelve a escuchar. También dictado al cuadro de texto.",
-  "types": "./types/index.d.ts"
-}

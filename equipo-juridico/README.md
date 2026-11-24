@@ -162,7 +162,7 @@ Cada persona se dibuja con su propia imagen, guardada en `assets/personajes.json
 
 - **Quién lleva qué imagen.** La clave es el `id` de la persona (`maria`, `juan`, `luis`, `clara`, `alberto`, `elena`, `pablo`, `carmen`, `rufino`) y `director` para quien dirige. Quien se añada al equipo sin imagen propia lleva la de `mujer` o la de `hombre`, según su `genero`.
 - **Dónde se coloca cada cuerpo.** El mismo archivo dice el punto de cada silla en el fondo (`sitios`) y qué punto de la imagen va ahí (`cuerpo.ancla`: el centro de la base de la silla, o los pies).
-- **Para cambiar o regenerar un personaje**: los originales y los dos guiones (generar y exportar) están en la carpeta `personajes-originales`, junto a `RESULTADO.md`. Se regenera ahí, se exporta de nuevo `personajes.json` y se escribe `/equipo recargar`.
+- **Para cambiar un personaje**: sustituye su imagen dentro de `assets/personajes.json` (van incrustadas en base64) y escribe `/equipo recargar`.
 - **El dibujo no puede pasar de 131.072 caracteres** (es el tope de la app). La oficina llena (las 8 personas, Rufino y el director, con sus caras, el chat y el fondo) ocupa unos 108.500: sobran unos 22.500. Una prueba lo vigila. Si alguna vez no cupiera, el mod quita por este orden las caras de quien ya descansa, las del chat, las demás caras y, por último, los cuerpos; lo que quita lo dibuja él mismo.
 - **Si falta `personajes.json`**, la oficina dibuja ella misma a cada persona, distinta según su género, su peinado y su ropa: nunca todas iguales.
 

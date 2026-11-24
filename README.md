@@ -1,66 +1,140 @@
 # Mods de Claude para abogados · Derecho Virtual
 
-Todos los **mods de Claude Code** que hemos hecho en Derecho Virtual, tal como los usamos en las clases y en los vídeos. Un mod es código que corre dentro de Claude Code, dibuja su propia interfaz (paneles, bandas, botones) y reacciona a lo que pasa en la sesión.
+Los mods que enseñamos en la conferencia, gratis y listos para instalar.
+
+**Qué es un mod.** Es un pequeño añadido que cambia la aplicación de Claude por dentro: dibuja paneles, botones y avisos propios y reacciona a lo que pasa mientras trabajas (un escrito que se termina, una cita sin verificar, un plazo que vence). No es un prompt ni una skill: es interfaz nueva dentro de Claude.
+
+## Qué trae
 
 | Mod | Qué hace | Comandos |
 | :- | :- | :- |
-| [`mods-abogados`](mods-abogados/README.md) | Diez mods en uno: panel de plazos procesales (también los de un escrito judicial), revisor de citas, cuenta atrás del plazo más urgente, un color por cliente, cupo de Jurisprudenciator, «que lo ataque el contrario», semáforo MASC, procurador, copia anonimizada y siguientes pasos. | `/plazos`, `/citas`, `/cliente`, `/ficha`, `/contrario`, `/cupo`, `/siguientes` |
-| [`equipo-juridico`](equipo-juridico/README.md) | Los subagentes y las tareas en segundo plano, contados como un equipo jurídico con nombre y oficio (María, Juan, Luis, Clara, Alberto, Elena, Pablo, Carmen y Rufino, el abogado contrario), en una oficina en pixel art y con la barra de avance del escrito. | `/equipo` |
-| `azul-claro` | Los mensajes de Claude sobre azul claro translúcido. | `/azul` |
-| `modo-voz` | Hablas y Claude te contesta en voz alta; también dictado al cuadro de texto. Necesita ffmpeg, Python y una clave de OpenAI (`OPENAI_API_KEY` en `~/.claude/.env`). | `/voz`, `/dictar` |
-| `entorno-emoji` | Un emoji y el nombre de la carpeta en la que trabajas, encima del prompt. | — |
+| [`equipo-juridico`](equipo-juridico/) | Convierte los subagentes de Claude en **tu equipo**: María la secretaria, Juan el buscador de jurisprudencia, Luis el picapleitos, Clara, Alberto, Elena, Pablo y Carmen, más Rufino, el abogado contrario. Cada uno aparece trabajando en su mesa de una **oficina** dibujada, habla con su personalidad y tiene su ficha. Encima del cuadro de texto, una barra con el **porcentaje del escrito hecho** y el botón **Ver equipo**. | `/equipo`, `/equipo oficina`, `/equipo lista`, `/equipo recargar`, `/equipo limpiar`, `/equipo ayuda` |
+| [`mods-abogados`](mods-abogados/) | Diez mods en uno: **panel de plazos** procesales (también saca los de un escrito judicial), **revisor de citas** con semáforo, **cuenta atrás** del plazo más urgente, **un color por cliente**, cupo de Jurisprudenciator, «que lo ataque el contrario», aviso de MASC, aviso de procurador, siguientes pasos y copia anonimizada (apagada por defecto). | `/plazos`, `/plazo-nuevo`, `/plazo-borrar`, `/citas`, `/cliente`, `/cliente-nuevo`, `/cliente-ninguno`, `/ficha`, `/masc`, `/contrario`, `/cupo`, `/siguientes`, `/anonimizar` |
+| [`entorno-emoji`](entorno-emoji/) | Un emoji y el nombre de la carpeta en la que trabajas, encima del cuadro de texto, para no confundirte de expediente. | No tiene |
 
-## Requisitos
+Cada mod tiene su propia guía completa en su carpeta (`equipo-juridico/README.md` y `mods-abogados/README.md`).
 
-- **Claude Code 2.1.287 o posterior** en el terminal (`claude --version`), o la app de escritorio de Claude con Claude Code 2.1.286 o posterior.
+## Qué necesitas
+
+- La **aplicación de escritorio de Claude** (Windows o Mac), actualizada, con la pestaña **Code**. Los mods funcionan en esa pestaña, no en el chat normal ni en la web.
+- Nada más. No hace falta saber programar ni tener cuenta de GitHub.
+
+Quien use Claude Code en la terminal necesita la versión 2.1.287 o posterior (`claude --version`).
 
 ## Instalación
 
-Añade este repositorio como marketplace:
+### Vía 1 · Pídeselo a Claude (la más fácil)
 
-```bash
-claude plugin marketplace add DerechoVirtual/mods-claude-abogados
+1. Abre la aplicación de Claude, entra en la pestaña **Code** y empieza una sesión en cualquier carpeta.
+2. Escribe este mensaje:
+
+   ```text
+   Instálame este marketplace de plugins de Claude Code y sus tres mods (mods-abogados, equipo-juridico y entorno-emoji), para mi usuario: https://github.com/DerechoVirtual/mods-claude-abogados
+   ```
+
+3. Acepta los permisos que te pida. Cuando termine, escribe `/reload-plugins` (o abre una sesión nueva).
+4. Compruébalo: escribe `/equipo` y `/plazos`. Si se abren sus paneles, está instalado.
+
+### Vía 2 · A mano, con cuatro órdenes
+
+En la pestaña **Code**, escribe estas órdenes en el cuadro de texto, una a una:
+
+```text
+/plugin marketplace add DerechoVirtual/mods-claude-abogados
 ```
 
-E instala los mods que quieras:
-
-```bash
-claude plugin install mods-abogados@mods-derecho-virtual --scope user
+```text
+/plugin install mods-abogados@mods-derecho-virtual
 ```
 
-```bash
-claude plugin install equipo-juridico@mods-derecho-virtual --scope user
+```text
+/plugin install equipo-juridico@mods-derecho-virtual
 ```
 
-```bash
-claude plugin install azul-claro@mods-derecho-virtual --scope user
+```text
+/plugin install entorno-emoji@mods-derecho-virtual
 ```
 
-```bash
-claude plugin install modo-voz@mods-derecho-virtual --scope user
+Y para que la sesión abierta los cargue:
+
+```text
+/reload-plugins
 ```
 
-```bash
-claude plugin install entorno-emoji@mods-derecho-virtual --scope user
+Puedes instalar solo los que quieras. Si prefieres la terminal, son las mismas órdenes con `claude` delante y sin la barra: `claude plugin marketplace add DerechoVirtual/mods-claude-abogados` y `claude plugin install mods-abogados@mods-derecho-virtual --scope user` (igual con los otros dos).
+
+## Primeros pasos
+
+- **Ver al equipo trabajar.** Pide un escrito («redáctame una demanda de reclamación de cantidad…»). En cuanto Claude reparte el trabajo, aparece la barra con el porcentaje y el botón **Ver equipo**, que abre la oficina. También puedes abrirla con `/equipo oficina`.
+- **Plazos.** `/plazo-nuevo ejemplo` carga cinco plazos ficticios para probar el panel; `/plazos` lo abre. Con una providencia o un decreto adjuntos, `/plazos` saca sus plazos.
+- **Citas.** Después de cada respuesta con artículos o sentencias verás «§ 3 citas por verificar»; `/citas` las detalla.
+- **Clientes.** `/cliente-nuevo` añade los tuyos; `/cliente` elige con cuál trabajas y tiñe la interfaz de su color.
+- **Carpeta de prueba.** [`demo/`](demo/) trae expedientes inventados para probar sin tocar asuntos reales.
+
+## Personalizar el equipo (nombres de los empleados)
+
+Los nombres, el tono y el director están en el archivo `config/equipo.json` del mod `equipo-juridico`.
+
+**La forma fácil:** pídeselo a Claude en la pestaña Code. Por ejemplo:
+
+```text
+En el mod equipo-juridico que tengo instalado, abre config/equipo.json y cambia: el director soy yo, «Ana» (generoDirector "f"); el picapleitos se llama «Marcos» en vez de Luis; y pon el tono en "profesional".
 ```
 
-Si ya tenías Claude Code abierto, escribe `/reload-plugins` en esa sesión.
+Después escribe `/equipo recargar`.
 
-También puedes pedírselo a Claude: «instala los mods de https://github.com/DerechoVirtual/mods-claude-abogados».
+**A mano:** el archivo está en la carpeta de tu usuario, en `.claude/plugins/cache/mods-derecho-virtual/equipo-juridico/` (dentro, la carpeta con el número de versión) `/config/equipo.json`. Qué puedes tocar:
 
-## Carpeta de demostración
+- `director` y `generoDirector` (`"m"` o `"f"`): quién preside la oficina. Viene «Carlos»; pon tu nombre.
+- En cada persona, `nombre`, `inicial` y `muletillas` (sus coletillas). Deja el `id` como está y conservará su dibujo. Si cambias a alguien de hombre a mujer (o al revés), cambia también `genero` y el `id` (por ejemplo `"marta"`): llevará el personaje genérico de mujer o de hombre.
+- `tono`: `"informal"` (el de la conferencia: desenfadado, y Rufino suelta tacos contra el escrito) o `"profesional"` (sin tacos, para usarlo delante de un cliente).
+- `avisosEmergentes`: `true` o `false`.
 
-`demo/` trae expedientes **ficticios** para probar los mods sin tocar asuntos reales. Abre Claude Code dentro de esa carpeta (`cd demo` y `claude`).
+Si el archivo queda con un error, el mod usa el equipo original y te avisa.
+
+Ten en cuenta que tus cambios, igual que tus plazos y clientes de `mods-abogados`, se guardan dentro de la carpeta del mod instalado: antes de actualizar a una versión nueva, guarda copia de las carpetas `config` y `data`.
+
+## Activar o desactivar cada mod
+
+Los diez mods de `mods-abogados` se encienden y apagan por separado en `/plugin` → `mods-abogados` (o en `/config`). Después, `/reload-plugins`.
+
+## Desinstalar
+
+En la pestaña Code:
+
+```text
+/plugin uninstall equipo-juridico@mods-derecho-virtual
+```
+
+```text
+/plugin uninstall mods-abogados@mods-derecho-virtual
+```
+
+```text
+/plugin uninstall entorno-emoji@mods-derecho-virtual
+```
+
+Y, si quieres quitar también el catálogo:
+
+```text
+/plugin marketplace remove mods-derecho-virtual
+```
+
+O pídeselo a Claude: «desinstala los mods de mods-derecho-virtual».
 
 ## Antes de usarlos con expedientes reales
 
 - Todos los datos que traen son **ficticios**: ningún nombre, importe ni asunto corresponde a personas o empresas reales.
-- Un mod ejecuta código con tus permisos y ve lo que escribes. **Revisa el código** antes de usarlo en tu despacho.
-- El cómputo de plazos, el semáforo de citas y los avisos de MASC y procurador son **orientativos**: un abogado debe verificar cada plazo, cada cita y cada requisito.
+- Un mod ejecuta código en tu ordenador con tus permisos y ve lo que escribes. El código está aquí, a la vista, para que lo revises.
+- El cómputo de plazos, el semáforo de citas y los avisos de MASC y de procurador son **orientativos**: un abogado debe verificar cada plazo, cada cita y cada requisito.
+- Añade los festivos de tu comunidad autónoma y de tu municipio (`mods-abogados/config/festivos.json` solo trae los nacionales).
 
-## Más
+## Jurisprudencia de verdad en tus escritos
 
-- Canal de YouTube: [Inteligencia Artificial para Abogados](https://www.youtube.com/channel/UCb9yL_jfH9NSxqwtl3sZM-w)
-- Formación: [Derecho Virtual](https://derechovirtual.org)
+El equipo jurídico y el revisor de citas dan lo mejor cuando Claude consulta jurisprudencia y legislación oficiales con **Jurisprudenciator**: sentencias con su párrafo literal y su ECLI, artículos vigentes y verificación de citas.
 
-Licencia MIT.
+**[www.jurisprudenciator.com](https://www.jurisprudenciator.com)**
+
+---
+
+Hecho por [Derecho Virtual](https://www.jurisprudenciator.com). Licencia MIT.

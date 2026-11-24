@@ -17,22 +17,6 @@
       "procedimiento": "verbal-cuantia",
       "cuantia": 2340,
       "nota": "Reclamación a la aseguradora por los daños del coche. Falta designar procurador y acreditar el intento de negociación previa (la reclamación del art. 7 LRCSCVM está por verificar como MASC)."
-    },
-    "Divorcio contencioso 1452/2026 (TI Zaragoza, Familia, Plaza 2)": {
-      "procedimiento": "verbal-materia",
-      "procurador": "D.ª Carmen Lasierra Pueyo",
-      "masc": {
-        "medio": "mediacion",
-        "fecha": "2026-09-10",
-        "documento": "DOC. 13 · burofax de 15/07/2026 y acta de mediación sin acuerdo de 10/09/2026",
-        "nota": "Mediación propuesta por la actora; sesión sin acuerdo (art. 10.3 LO 1/2025). Somos la parte demandada."
-      },
-      "nota": "FICTICIO (vídeo de los mods). Contestación a la demanda de divorcio contencioso: 20 días desde el 06/11/2026."
-    },
-    "Modificación de medidas Sanz-Gracia (pendiente de presentar)": {
-      "procedimiento": "verbal-materia",
-      "procurador": "D.ª Carmen Lasierra Pueyo",
-      "nota": "FICTICIO (vídeo de los mods). Subida de la pensión de alimentos de 250 € a 480 €/mes (art. 775 LEC). No consta intento de negociación previa."
     }
   }
 }
